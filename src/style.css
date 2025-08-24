@@ -1,0 +1,127 @@
+/* General Page Style */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1e1b4b, #6d28d9);
+}
+
+/* Container */
+.container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  width: 350px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input Box */
+.input-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 25px 0 0 25px;
+  outline: none;
+}
+
+.input-box button {
+  background: #f43f5e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.input-box button:hover {
+  background: #e11d48;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+ul li span {
+  cursor: pointer;
+  flex: 1;
+}
+
+/* Buttons inside Task */
+.task-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.task-buttons button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+/* Update Button */
+.task-buttons .update-btn {
+  background: #3b82f6; /* Blue */
+  color: white;
+}
+
+.task-buttons .update-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Delete Button */
+.task-buttons .delete-btn {
+  background: #f43f5e; /* Red */
+  color: white;
+}
+
+.task-buttons .delete-btn:hover {
+  background: #e11d48;
+}
+
+/* Edit Input Mode */
+.edit-input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 8px;
+}
